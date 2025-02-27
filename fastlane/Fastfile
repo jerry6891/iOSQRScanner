@@ -1,0 +1,21 @@
+default_platform(:ios)
+
+platform :ios do
+  desc "Run all unit tests"
+  lane :test do
+    scan
+  end
+
+  desc "Build the iOS app for local testing"
+  lane :build do
+    gym(
+      scheme: "iOSQRScanner",  # Ensure this matches your scheme name in Xcode
+      export_method: "development",  # Change "app-store" to "development"
+      codesigning_identity: "",  # Prevents Fastlane from requiring a certificate
+      skip_package_ipa: true,  # Avoids packaging an .ipa file (which needs signing)
+      skip_profile_detection: true,  # Skips searching for a provisioning profile
+      suppress_xcode_output: true, # Suppresses Xcode’s excessive output
+      xcargs: "COMPILER_INDEX_STORE_ENABLE=NO" # Stops unnecessary indexing
+    )
+  end
+end
