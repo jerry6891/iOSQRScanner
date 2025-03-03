@@ -8,6 +8,26 @@
 import XCTest
 
 final class iOSQRScannerUITests: XCTestCase {
+    let app = XCUIApplication()
+
+    override func setUpWithError() throws {
+        continueAfterFailure = false
+        app.launch()
+    }
+
+    func testLoginButtonExists() {
+        let loginButton = app.buttons["Authenticate with Face ID / Touch ID"]
+        XCTAssertTrue(loginButton.exists, "Login button should be visible")
+    }
+
+    func testNavigationToScanner() {
+        app.buttons["Authenticate with Face ID / Touch ID"].tap()
+        let scanButton = app.buttons["Scan QR Code"]
+        XCTAssertTrue(scanButton.waitForExistence(timeout: 5), "Scan QR Code button should appear after login")
+    }
+}
+
+/* final class iOSQRScannerUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -41,3 +61,4 @@ final class iOSQRScannerUITests: XCTestCase {
         }
     }
 }
+*/

@@ -42,6 +42,36 @@
 			);
 			target = 454248C12D6FDA58003D8680 /* iOSQRScanner */;
 		};
+		45CDB6882D7236BE004A806B /* Exceptions for "iOSQRScanner" folder in "iOSQRScannerTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Main/iOSQRScannerApp.swift,
+				Models/QRCode.swift,
+				ViewModels/BiometricAuthViewModel.swift,
+				ViewModels/QRHistoryViewModel.swift,
+				ViewModels/QRScannerViewModel.swift,
+				Views/BiometricLoginView.swift,
+				Views/ContentView.swift,
+				Views/QRHistoryView.swift,
+				Views/QRScannerView.swift,
+			);
+			target = 454248D32D6FDA5B003D8680 /* iOSQRScannerTests */;
+		};
+		45CDB68D2D723736004A806B /* Exceptions for "iOSQRScanner" folder in "iOSQRScannerUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Main/iOSQRScannerApp.swift,
+				Models/QRCode.swift,
+				ViewModels/BiometricAuthViewModel.swift,
+				ViewModels/QRHistoryViewModel.swift,
+				ViewModels/QRScannerViewModel.swift,
+				Views/BiometricLoginView.swift,
+				Views/ContentView.swift,
+				Views/QRHistoryView.swift,
+				Views/QRScannerView.swift,
+			);
+			target = 454248DD2D6FDA5B003D8680 /* iOSQRScannerUITests */;
+		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -49,6 +79,8 @@
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				454248F92D70E1F3003D8680 /* Exceptions for "iOSQRScanner" folder in "iOSQRScanner" target */,
+				45CDB6882D7236BE004A806B /* Exceptions for "iOSQRScanner" folder in "iOSQRScannerTests" target */,
+				45CDB68D2D723736004A806B /* Exceptions for "iOSQRScanner" folder in "iOSQRScannerUITests" target */,
 			);
 			path = iOSQRScanner;
 			sourceTree = "<group>";

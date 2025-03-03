@@ -13,6 +13,20 @@ final class iOSQRScannerUITestsLaunchTests: XCTestCase {
         true
     }
 
+    func testLaunchScreen() {
+        let app = XCUIApplication()
+        app.launch()
+
+        XCTAssertTrue(app.staticTexts["QR Scanner"].exists, "App should show the main QR Scanner screen on launch")
+    }
+}
+
+/* final class iOSQRScannerUITestsLaunchTests: XCTestCase {
+
+    override class var runsForEachTargetApplicationUIConfiguration: Bool {
+        true
+    }
+
     override func setUpWithError() throws {
         continueAfterFailure = false
     }
@@ -31,3 +45,4 @@ final class iOSQRScannerUITestsLaunchTests: XCTestCase {
         add(attachment)
     }
 }
+*/
