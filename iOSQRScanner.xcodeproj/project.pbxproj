@@ -27,6 +27,19 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		45B2C92B2D768836008FFD11 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		454248C22D6FDA58003D8680 /* iOSQRScanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSQRScanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		454248D42D6FDA5B003D8680 /* iOSQRScannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSQRScannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +58,7 @@
 		45CDB6882D7236BE004A806B /* Exceptions for "iOSQRScanner" folder in "iOSQRScannerTests" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				Main/AppDelegate.swift,
 				Main/iOSQRScannerApp.swift,
 				Models/QRCode.swift,
 				ViewModels/BiometricAuthViewModel.swift,
@@ -60,6 +74,7 @@
 		45CDB68D2D723736004A806B /* Exceptions for "iOSQRScanner" folder in "iOSQRScannerUITests" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
+				Main/AppDelegate.swift,
 				Main/iOSQRScannerApp.swift,
 				Models/QRCode.swift,
 				ViewModels/BiometricAuthViewModel.swift,
@@ -153,6 +168,7 @@
 				454248BE2D6FDA58003D8680 /* Sources */,
 				454248BF2D6FDA58003D8680 /* Frameworks */,
 				454248C02D6FDA58003D8680 /* Resources */,
+				45B2C92B2D768836008FFD11 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -359,6 +375,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/flutter_module/build/ios/framework/Release/**";
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -422,6 +439,7 @@
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/flutter_module/build/ios/framework/Release/**";
 				GCC_C_LANGUAGE_STANDARD = gnu17;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -450,6 +468,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"iOSQRScanner/Preview Content\"";
 				DEVELOPMENT_TEAM = NH8XD446D8;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/flutter_module/build/ios/framework/Release/**";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iOSQRScanner/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera to scan QR codes.";
@@ -483,6 +502,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"iOSQRScanner/Preview Content\"";
 				DEVELOPMENT_TEAM = NH8XD446D8;
 				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/flutter_module/build/ios/framework/Release/**";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iOSQRScanner/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "We need access to your camera to scan QR codes.";
